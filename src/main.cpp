@@ -1,3 +1,7 @@
+/*
+  INCLUDE DE BIBLIOTECAS
+*/
+
 #include <Arduino.h>
 #include <MotorCC.h>
 #include <SensorInfravermelho.h>
@@ -5,23 +9,26 @@
 using namespace std;
 
 /*
-  ASSINATURA DE FUNÇÕES
+  DEFINIÇÃO DE PROTÓTIPOS
 */
 
-int somaRespostaSensores();
+float calcularErroAtual();
+float calcularErroProporcional(float kp = 1);
+float calcularErroIntegrativo(float ki = 1);
+float calcularErroDerivativo(float kd = 1);
 
 /*
   DECLARAÇÃO DE VARIÁVEIS
 */
 
-MotorCC motorEsquerdo(9,10,11);
-MotorCC motorDireito(7,8,6);
+MotorCC motorEsquerdo(9,10,11),
+        motorDireito(7,8,6);
 
-SensorInfravermelho sensorDireito(3);
-SensorInfravermelho sensorCentroDireito(4);
-SensorInfravermelho sensorCentral(5);
-SensorInfravermelho sensorCentroEsquerdo(12);
-SensorInfravermelho sensorEsquerdo(13);
+SensorInfravermelho sensorDireito(3),
+                    sensorCentroDireito(4),
+                    sensorCentral(5),
+                    sensorCentroEsquerdo(12),
+                    sensorEsquerdo(13);
 
 const unsigned short int quantidadeSensores = 5;
 
@@ -33,11 +40,22 @@ SensorInfravermelho* sensores[quantidadeSensores] = {
     &sensorDireito,         //4
   };
 
-bool saiu_pela_esq = false;
-bool saiu_pela_dir = false;
+unsigned int velocidadePadrao = 100,
+             setPoint         = 0;
+
+float erro          = 0,
+      erroAnterior  = 0,
+
+      proporcional  = 0,
+      integrativo   = 0,
+      derivativo    = 0,
+      resultado     = 0,
+
+      velocidadeMotorDireito  = 0,
+      velocidadeMotorEsquerdo = 0;
 
 /*
-  FUNÇÕES PRINCIPAIS
+  FUNÇÕES DE EXECUÇÃO
 */
 
 void setup() {
@@ -47,74 +65,54 @@ void setup() {
 }
 
 void loop() {
-    int ultimoSensorQueCaptouLinha = 0;
-    // andar reto
-    if (sensores[2]->isReflect()){
-        motorEsquerdo.girarHorario(110);
-        motorDireito.girarHorario(110);
-        saiu_pela_dir = false;
-        saiu_pela_esq = false;
-        ultimoSensorQueCaptouLinha = 2;
-    }
+  proporcional  = calcularErroProporcional(15);
+  integrativo   = calcularErroIntegrativo(0);
+  derivativo    = calcularErroDerivativo(0);
+  resultado     = proporcional + integrativo + derivativo;
 
-    // acionamento esquerda brusco
-    else if (sensores[0]->isReflect() && !sensores[1]->isReflect()){
-        motorEsquerdo.girarHorario(0);
-        motorDireito.girarHorario(100);
-        saiu_pela_dir = false;
-        saiu_pela_esq = true;
-        ultimoSensorQueCaptouLinha = 0;
-    }
+  velocidadeMotorEsquerdo = constrain((int)(velocidadePadrao - resultado), 0, 255);
+  velocidadeMotorDireito  = constrain((int)(velocidadePadrao + resultado), 0, 255);
 
-    // acionamento esquerda leve
-    else if (sensores[1]->isReflect()){
-        motorEsquerdo.girarHorario(25);
-        motorDireito.girarHorario(100);
-        ultimoSensorQueCaptouLinha = 1;
-        saiu_pela_dir = false;
-        saiu_pela_esq = false;
-    }
-
-    // acionamento direita brusco
-    else if (sensores[4]->isReflect() && !sensores[3]->isReflect()){
-        motorEsquerdo.girarHorario(100);
-        motorDireito.girarHorario(0);
-        saiu_pela_dir = true;
-        saiu_pela_esq = false;
-        ultimoSensorQueCaptouLinha = 4;
-    }
-
-    // acionamento direita leve
-    else if (sensores[3]->isReflect()){
-        motorEsquerdo.girarHorario(100);
-        motorDireito.girarHorario(25);
-        saiu_pela_dir = false;
-        saiu_pela_esq = false;
-        ultimoSensorQueCaptouLinha = 3;
-    }
-
-    else{
-        
-        if (saiu_pela_dir && !somaRespostaSensores() && ultimoSensorQueCaptouLinha == 4){
-            motorEsquerdo.girarHorario(100);
-            motorDireito.girarHorario(0);
-        }
-
-        else if (saiu_pela_esq && !somaRespostaSensores() && ultimoSensorQueCaptouLinha == 0){
-            motorEsquerdo.girarAntiHorario(100);
-            motorDireito.girarHorario(0);
-        }
-    }
+  motorEsquerdo.girarHorario(velocidadeMotorEsquerdo);
+  motorDireito.girarHorario(velocidadeMotorDireito);
 }
 
 /*
-  DECLARAÇÃO DE FUNÇÕES
+  DEFINIÇÃO DE FUNÇÕES
 */
 
-int somaRespostaSensores(){
-  int soma = 0;
-  for(const auto& sensor: sensores){
-    soma += sensor->isReflect();
+float calcularErroAtual(){
+  short int pesos[quantidadeSensores] = {
+    -2, -1, 0, 1, 2
+  };
+
+  int numerador = 0;
+  int denominador = 0;
+
+  for(unsigned int i = 0; i < quantidadeSensores; ++i){
+    int leitura = sensores[i]->isReflect();
+    numerador += leitura * pesos[i];
+    denominador += leitura;
   }
-  return soma;
+
+  if(denominador == 0){
+    return erroAnterior;
+  }
+
+  erroAnterior = erro;
+  return erro = numerador / denominador;
+}
+
+float calcularErroProporcional(float kp){
+  return kp * calcularErroAtual();
+}
+
+float calcularErroIntegrativo(float ki){
+  integrativo += calcularErroAtual();
+  return ki * integrativo;
+}
+
+float calcularErroDerivativo(float kd){
+  derivativo = calcularErroAtual() - erroAnterior;
+  return derivativo;
 }
