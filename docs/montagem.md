@@ -38,6 +38,18 @@
 | 4 | Suporte fixo para motor 10 x 33 x 3mm (CxLxP) |
 | 1 | Suporte para 2 Baterias de Li-ion 18650 |
 
+<abbr title="Componentes">
+    <img alt="Componentes" src="./img/componentes.jpg" width="45%">
+</abbr>
+
+<abbr title="Parafusos">
+    <img alt="Parafusos" src="./img/parafusos.jpg" width="45%">
+</abbr>
+
+<abbr title="Cabos">
+    <img alt="Cabos" src="./img/cabos.jpg" width="45%">
+</abbr>
+
 ## Ferramentas de Montagem
 
 | Quantidade | Descrição |
@@ -47,7 +59,11 @@
 | 1 | Esponja vegetal 7 x 4,5 x 1cm (CxLxP) |
 | 1 | Pistola de Cola Quente |
 | 1 | Solda de estanho 60x40 500g 1mm |
-| 1 | Tubo de cola quente 11mm x 30cm (tamanho varia por pistola)|
+| 1 | Tubo de cola quente 11mm x 30cm (DxC, tamanho varia por pistola)|
+
+<abbr title="Ferramentas">
+    <img alt="Ferramentas" src="./img/ferramentas.jpg" width="45%">
+</abbr>
 
 ## Itens aconselháveis ao projeto
 
@@ -62,6 +78,10 @@
 | 1 | Sugador de solda |
 | 1 | Suporte para sensores infravermelhos 6 x 2,5cm (CxL) |
 | 1 | Tesoura |
+
+<abbr title="Opcionais">
+    <img alt="Opcionais"" src="./img/opcionais.jpg" width="45%">
+</abbr>
 
 <!-- Links de compra
      Kit Montagem: 
