@@ -11,6 +11,14 @@
     - [ ] Apresentar código de exemplo
 -->
 
+<!-- Sites para converter em PDF
+    - https://cloudconvert.com/md-to-pdf (achei a formatação legal)
+    - https://md-to-pdf.fly.dev/ (pode usar css)
+
+    Mantenha as imagens na web
+-->
+# Seguidor de linha com 2 rodas
+
 ## Componentes do seguidor de linha
 
 | Quantidade | Descrição |
@@ -38,17 +46,29 @@
 | 4 | Suporte fixo para motor 10 x 33 x 3mm (CxLxP) |
 | 1 | Suporte para 2 Baterias de Li-ion 18650 |
 
+**Figura 1:** Componentes do seguidor de linha  
+
 <abbr title="Componentes">
     <img alt="Componentes" src="./img/componentes.jpg" width="45%">
 </abbr>
+
+A imagem acima mostra em seu canto superior, da esquerda para a direita, o suporte para baterias de Li-ion, baterias de Li-ion 18650, módulo de ponte h dupla 298N e uma das duas rodas de borracha. Em sua direita temos a roda boba, a segunda roda de borracha e os dois motores DC. Na parte inferior temos os cinco sensores de infravermelho. Já no canto esquerdo pode-se ver o chassi de acrílico e os suportes para os motores. Por fim, em seu centro, encontra-se o arduino, o cabo USB A/B, a protoboard de 50 pontos e o interruptor.
+
+**Figura 2:** Parafusos
 
 <abbr title="Parafusos">
     <img alt="Parafusos" src="./img/parafusos.jpg" width="45%">
 </abbr>
 
+A figura 2 retrata os parafusos e relacionados que são utilizados no projeto. Os parafusos de maior comprimento são os parafusos M3 de 30mm, já os menores são os M3 de 8mm. Em adicional temos as porcas M3 e os espaçadores fêmea-fêmea M3 x 10mm.
+
+**Figura 3:** Cabos
+
 <abbr title="Cabos">
     <img alt="Cabos" src="./img/cabos.jpg" width="45%">
 </abbr>
+
+Na figura 3 temos, de cima para baixo, cabos jumper macho-macho de 20cm, cabos jumper macho-macho de 10cm, cabos jumper macho-fêmea de 10cm, cabos jumper macho-fêmea de 20cm e os fios estanhados de duas cabeças com 20cm de comprimento.
 
 ## Ferramentas de Montagem
 
@@ -61,9 +81,13 @@
 | 1 | Solda de estanho 60x40 500g 1mm |
 | 1 | Tubo de cola quente 11mm x 30cm (DxC, tamanho varia por pistola)|
 
+**Figura 4:** Ferramentas de montagem
+
 <abbr title="Ferramentas">
     <img alt="Ferramentas" src="./img/ferramentas.jpg" width="45%">
 </abbr>
+
+Com base na figura 4 percebe-se, da esquerda para a direita, a esponja vegetal, o suporte para o ferro de solda, o ferro de solda, a fonte da estação de solda, solda de estanho, chave de fenda com ponta M3 e a pistola de cola quente carregada.
 
 ## Itens aconselháveis ao projeto
 
@@ -71,7 +95,7 @@
 | --- | --- |
 | 1 | Alicate universal 5 polegadas |
 | 1 | Carregador de baterias de Li-ion 18650 |
-| 1 | Fita isolante (preta ou branca) 20mm x 10m |
+| 1 | Fita isolante (preta ou branca) 20mm x 10m (LxC)|
 | 1 | Fluxo de solda |
 | 1 | Multímetro digital |
 | 1 | Pinça antiestática curva |
@@ -79,9 +103,13 @@
 | 1 | Suporte para sensores infravermelhos 6 x 2,5cm (CxL) |
 | 1 | Tesoura |
 
+**Figura 5:** Ferramentas opcionais do projeto
+
 <abbr title="Opcionais">
     <img alt="Opcionais"" src="./img/opcionais.jpg" width="45%">
 </abbr>
+
+Segundo a figura 5, da esquerda para a direita, tem-se o multímetro digital, a tesoura, o alicate universal de 5 polegadas, o carregador de baterias de Li-ion 18650, o suporte para sensores infravermelhos (seja criativo), a fita isolante, a pinça antiestática curva, o fluxo de solda e o sugador de solda.
 
 <!-- Links de compra
      Kit Montagem: 
