@@ -8,12 +8,15 @@
     - [ ] Propor atividade
     - [ ] Propor sugestão de melhoria
         - [ ] Roda boba para esfera suspensa
+        - [ ] Sensor infravermelho para matriz de improvisado
+        - [ ] Suporte improvisado para modelagem 3d
     - [ ] Apresentar código de exemplo
 -->
 
 <!-- Sites para converter em PDF
     - https://cloudconvert.com/md-to-pdf (achei a formatação legal)
     - https://md-to-pdf.fly.dev/ (pode usar css)
+    - https://dillinger.io/
 
     Mantenha as imagens na web
 -->
@@ -48,25 +51,19 @@
 
 **Figura 1:** Componentes do seguidor de linha  
 
-<abbr title="Componentes">
-    <img alt="Componentes" src="./img/componentes.jpg" width="45%">
-</abbr>
+[![componentes-335x250px.png](https://i.postimg.cc/c1h3nQgx/componentes-335x250px.png)](https://postimg.cc/NLyLh2kS)
 
 A imagem acima mostra em seu canto superior, da esquerda para a direita, o suporte para baterias de Li-ion, baterias de Li-ion 18650, módulo de ponte h dupla 298N e uma das duas rodas de borracha. Em sua direita temos a roda boba, a segunda roda de borracha e os dois motores DC. Na parte inferior temos os cinco sensores de infravermelho. Já no canto esquerdo pode-se ver o chassi de acrílico e os suportes para os motores. Por fim, em seu centro, encontra-se o arduino, o cabo USB A/B, a protoboard de 50 pontos e o interruptor.
 
 **Figura 2:** Parafusos
 
-<abbr title="Parafusos">
-    <img alt="Parafusos" src="./img/parafusos.jpg" width="45%">
-</abbr>
+[![Adobe-Express-file-1.jpg](https://i.postimg.cc/pd3H7n5g/Adobe-Express-file-1.jpg)](https://postimg.cc/SXL3YRrr)
 
 A figura 2 retrata os parafusos e relacionados que são utilizados no projeto. Os parafusos de maior comprimento são os parafusos M3 de 30mm, já os menores são os M3 de 8mm. Em adicional temos as porcas M3 e os espaçadores fêmea-fêmea M3 x 10mm.
 
 **Figura 3:** Cabos
 
-<abbr title="Cabos">
-    <img alt="Cabos" src="./img/cabos.jpg" width="45%">
-</abbr>
+[![Adobe-Express-file-3.jpg](https://i.postimg.cc/T16X2M90/Adobe-Express-file-3.jpg)](https://postimg.cc/nj0WTWN9)
 
 Na figura 3 temos, de cima para baixo, cabos jumper macho-macho de 20cm, cabos jumper macho-macho de 10cm, cabos jumper macho-fêmea de 10cm, cabos jumper macho-fêmea de 20cm e os fios estanhados de duas cabeças com 20cm de comprimento.
 
@@ -83,9 +80,7 @@ Na figura 3 temos, de cima para baixo, cabos jumper macho-macho de 20cm, cabos j
 
 **Figura 4:** Ferramentas de montagem
 
-<abbr title="Ferramentas">
-    <img alt="Ferramentas" src="./img/ferramentas.jpg" width="45%">
-</abbr>
+[![Adobe-Express-file-2.jpg](https://i.postimg.cc/yxyCkQpH/Adobe-Express-file-2.jpg)](https://postimg.cc/y3xbGPzQ)
 
 Com base na figura 4 percebe-se, da esquerda para a direita, a esponja vegetal, o suporte para o ferro de solda, o ferro de solda, a fonte da estação de solda, solda de estanho, chave de fenda com ponta M3 e a pistola de cola quente carregada.
 
@@ -105,11 +100,119 @@ Com base na figura 4 percebe-se, da esquerda para a direita, a esponja vegetal, 
 
 **Figura 5:** Ferramentas opcionais do projeto
 
-<abbr title="Opcionais">
-    <img alt="Opcionais"" src="./img/opcionais.jpg" width="45%">
-</abbr>
+[![Adobe-Express-file-4.jpg](https://i.postimg.cc/767kyYgb/Adobe-Express-file-4.jpg)](https://postimg.cc/VrYTqwZc)
 
 Segundo a figura 5, da esquerda para a direita, tem-se o multímetro digital, a tesoura, o alicate universal de 5 polegadas, o carregador de baterias de Li-ion 18650, o suporte para sensores infravermelhos (seja criativo), a fita isolante, a pinça antiestática curva, o fluxo de solda e o sugador de solda.
+
+## Montagem
+
+### Roda boba
+
+Posicione e parafuse as espaçadeiras M3 na parte que será a traseira do chassi. Em seguida, parafuse a roda boba nas espaçadeiras.
+
+<!-- Imagem 1 / espaçadeiras parafusadas -->
+<!-- Imagem 2 / roda boba parafusada -->
+
+### Motores
+
+Solde os fios estanhados nos motores como no exemplo abaixo. Utilize o fluxo de solda na região que será soldada para melhor aderência da solda.
+
+<!-- Imagem 3 / motores soldados -->
+
+> **Nota:** Deixe a esponja úmida para limpar o ferro de solda do acúmulo de estanho.
+
+Após posicionado os suportes entre o motor, ajuste os parafusos M3 de 30mm nas entradas e enrosque-os com as porcas M3. Certifique-se que o motor não esteja frouxo - pode utilizar o alicate para segurar as porcas enquanto parafusa. Repita o processo no segundo motor para ficar como na figura abaixo.
+
+<!-- Imagem 4 / motores parafusados -->
+
+### Arduino
+
+Utilizando cola quente, posicione o arduino na parte que será a traseira do chassi - acima da roda boba.
+
+<!-- Imagem 5 / arduino fixado -->
+
+### Ponte H
+
+Antes de fixar a ponte H, retire os pino das entradas ENA e ENB, elas são responsáveis pela velocidade dos motores. 
+
+> **Nota:** Se os pinos EN forem removidos, mas não cabeados, os motores não se moverão. 
+
+<!-- Imagem 6 / pinos EN da ponte H removidos -->
+
+Agora, novamente com a cola quente, posicione o módulo de ponte h próximo ao arduino. Nessa etapa não me preocupei com a centralização do componente para facilitar o uso do interruptor, como será percebido posteriormente.
+
+<!-- Imagem 7 / ponte h fixado -->
+
+### Suporte para baterias de Li-ion
+
+Aplique cola quente na parte inferior do suporte de baterias de Li-ion e o encaixe após o módulo de ponte h e os suportes dos motores.
+
+<!-- Imagem 8 / suporte de baterias fixado -->
+
+### Protoboard
+
+<!-- [Explique sua gambiarra caso as barras condutoras estejam amostra] -->
+
+<!-- Imagem 9 / gambiarra na protoboard -->
+
+Use cola quente na parte inferior da protoboard e fixe-a próximo ao suporte de baterias.
+
+<!-- Imagem 10 / protoboard fixado -->
+
+### Interruptor
+
+Coloque o interruptor no centro do chassi. Perceba como os fios do suporte de baterias estão posicionados, os usaremos em seguida.
+
+<!-- Imagem 11 / interruptor visto de cima -->
+
+Solde o fio positivo do suporte de baterias no interruptor. Em seguida, solde um dos jumpers macho-macho no outro pino do interruptor, como no exemplo a seguir:
+
+<!-- Imagem 12 / interruptor com fios soldados -->
+
+> **Nota:** Corte a ponta do jumper com alicate se for muito grande, os fios não podem ter contato.
+
+### Sensores infravermelho
+
+Antes de posicionar os sensores, verifique se estão calibrados. Para ajustar a sensibilidade à luz dos sensores rotacione seus potenciômetros.
+
+<!-- Imagem 13 / esquema de sensor conectado ao arduino -->
+
+<!-- Imagem 14 / sensor captando a linha -->
+
+<!-- Imagem 15 / sensor fora da linha -->
+
+Esses componentes serão colados na parte frontal do chassi obedecendo os seguintes critérios: 
+- A parte receptora do infravermelho deve estar em direção ao chassi;
+<!-- Imagem 16 / foto da orientaçãos do led receptor do sensor -->
+- A altura dos sensores em relação ao solo não deve ultrapassar 1cm, sendo aconselhável estarem à 5mm de altura para melhor precisão dos sensores;
+<!-- Imagem 17 / foto da altura dos sensores -->
+- A distância entre cada sensor não deve ser maior que o tamanho da linha a ser seguida, dessa forma pontos cegos entre os sensores são evitados;
+<!-- Imagem 18 / foto da distância entre os sensores -->
+
+>**Nota:** Foi colado um suporte improvisado para melhor fixação dos sensores ao carrinho. 
+
+### Cabeamento
+
+De forma geral, a utilização dos cabos jumpers ocorrerá da seguinte forma:
+
+<!-- Imagem 19 / Visão geral de cabeamento -->
+
+#### Alimentação da ponte H
+
+
+
+#### Controle de motores
+#### Alimentação do arduino
+#### Alimentação de sensores
+#### Controle de sensores
+
+## Código de exemplo
+
+## Proposta de atividade
+
+## Sugestões
+
+## Links de compras
 
 <!-- Links de compra
      Kit Montagem: 
