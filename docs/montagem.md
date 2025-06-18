@@ -205,6 +205,13 @@ Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interrupto
 <!-- Imagem 20 / Ponte H sendo alimentada -->
 
 #### Controle de motores
+
+Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo OUT1 e OUT2 para um motor e OUT3 e OUT4 para outro. Com os cabos macho-fêmea conecte os pinos de EN e IN no arduino, como na figura abaixo:
+
+<!-- Imagem 21 / Diagrama de conexão dos motores -->
+
+>**Nota:** os pinos EN devem ser plugados em entradas que suportem PWM do arduino
+
 #### Alimentação do arduino
 #### Alimentação de sensores
 #### Controle de sensores
