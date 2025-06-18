@@ -213,6 +213,13 @@ Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo O
 >**Nota:** os pinos EN devem ser plugados em entradas que suportem PWM do arduino
 
 #### Alimentação do arduino
+
+Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm de comprimento na porta de 5V e conecte num dos pontos da protoboard. Adicione também na porta GND deste módulo um outro cabo jumper macho-macho de 10 cm de comprimento e pine sua estremidade em outro ponto da protoboard. Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das portas 5V do arduino e sua estremidade na coluna da protoboard alimentada pela ponte H. Um outro cabo do mesmo tipo que o anterior deve ser pinado numa das portas GND do arduino e sua sua outra ponta encaixada na mesma coluna do cabo GND da ponte H. A figura abaixo ajuda a demonstrar o resultado:
+
+<!-- Imagem 22 / arduino sendo alimentado -->
+
+>**Nota:** Uma pinça talvez ajude com os fios quando ficarem muito numerosos
+
 #### Alimentação de sensores
 #### Controle de sensores
 
