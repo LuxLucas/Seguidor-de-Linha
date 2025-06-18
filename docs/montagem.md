@@ -241,6 +241,10 @@ Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT
 
 ## Código de exemplo
 
+Para testar o carrinho montado seguindo os passos citados acima, providenciei um código para ser compilado pelo arduino. O programa está disponibilizado num repositório do GitHub, para acessá-lo clique [nesse link](https://github.com/LuxLucas/Seguidor-de-Linha).
+
+>**Nota:** clone o repositório e faça o upload desse [código](https://github.com/LuxLucas/Seguidor-de-Linha/blob/main/src/main.cpp) no arduino
+
 ## Proposta de atividade
 
 ## Sugestões
