@@ -268,6 +268,8 @@ Durante a montagem do projeto percebi alguns pontos que poderiam ser melhorados 
 
 - **Diminuir os cabos:** A quantidade de cabos no projeto atual torna possível problemas de desconexão e manutenção. Recomendo utilizar placas e componentes que se comunicam por meio de internet ou bluetooth, diminuindo assim, a quantidade de cabos no projeto.
 
+Você também pode contribuir com melhorias, sejam de montagem, código e demais outros tópicos. Consulte seu professor ou faça uma *issue* no repositório do GitHub.
+
 ## Links de compras
 
 Caso seja necessário, a seguir uma lista de links para comprar os componentes do carrinho seguidor de linha montado no projeto:
@@ -315,3 +317,13 @@ Caso seja necessário, a seguir uma lista de links para comprar os componentes d
 - [**Solda de estanho Cobix 60/40**](https://www.s2magazine.com.br/estanho-fio-1-5mm-500g-60x40-snxpb-solda-cobix?utm_source=google&utm_medium=Shopping&utm_campaign=estanho-fio-1-5mm-500g-60x40-snxpb-solda-cobix&inStock&gad_source=1&gad_campaignid=21023758031&gclid=EAIaIQobChMIpIaUmrrvjQMV01xIAB1BLStWEAQYAyABEgIa2fD_BwE)
 
 ## Datasheets de componentes
+
+Os datasheets são documentos com informações técnicas de componentes, módulos, placas e etc. São usados como material de consulta para entender sua natureza.
+
+- [**Arduino**](https://www.alldatasheet.com/datasheet-pdf/download/1943445/ARDUINO/ARDUINO-UNO.html)
+
+- [**Motor DC 5V**](https://cdn.sparkfun.com/datasheets/Robotics/DG01D.jpg)
+
+- [**Guia da ponte H**](https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/) e [**Circuito L298N**](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.st.com/resource/en/datasheet/l298.pdf&ved=2ahUKEwi99r7Kg_yNAxVYB7kGHe0NLJUQFnoECBoQAQ&usg=AOvVaw2N-avnGevlvQW2n7mZbsGQ)
+
+- [**Guia do sensor infravermelho**](https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-infravermelho-reflexivo-de-obstaculo)
