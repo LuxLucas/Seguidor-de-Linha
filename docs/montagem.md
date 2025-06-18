@@ -248,6 +248,11 @@ Clone o repositório e faça o upload desse [código](https://github.com/LuxLuca
 >**Nota:** o programa foi feito para seguir linha preta
 
 ## Proposta de atividade
+Com o seguidor de linha montado e com os comandos gravados no arduino é hora de testar. Crie uma pista com fita isolante preta e analise como o carrinho se comporta e faça correções, se necessário.
+
+<!-- Imagem 24 / exemplo de pista -->
+
+Outra tarefa que me parece interessante seria a de desmontar e remontar o seguidor de linha em diferentes maneiras a fim de encontrar um modelo mais eficiente - ou simplesmente para ver o resultado.
 
 ## Sugestões
 
