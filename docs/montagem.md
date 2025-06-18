@@ -220,13 +220,24 @@ Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm 
 
 >**Nota:** Uma pinça talvez ajude com os fios quando ficarem muito numerosos.
 
-#### Alimentação de sensores
+#### Controle de sensores
 
 Para ligar os sensores é preciso, com cabos jumper macho-fêmea de 10cm, ligar a entrada VCC e GND dos sensores na sua respectiva coluna da protoboard.
 
+<!-- Imagem 23 / sensor sendo alimentado -->
+
 > **Nota:** se desejar, pode utilizar fita para unir e organizar jumpers.
 
-#### Controle de sensores
+Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT com o arduino nas seguintes portas:
+
+| Ponte H | Arduino |
+| --- | --- |
+| ENA | 6 |
+| IN1 | 7 |
+| IN2 | 8 |
+| IN3 | 9 |
+| IN4 | 10 |
+| ENB | 11 |
 
 ## Código de exemplo
 
