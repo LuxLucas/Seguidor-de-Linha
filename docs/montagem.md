@@ -4,12 +4,12 @@
     - [x] Links para materiais
     - [ ] Criar anexo com links de compra
     - [ ] Explicar montagem
-    - [ ] Link para GitHub
-    - [ ] Propor atividade
+    - [x] Link para GitHub
+    - [x] Propor atividade
     - [ ] Propor sugestão de melhoria
-        - [ ] Roda boba para esfera suspensa
-        - [ ] Sensor infravermelho para matriz de infravermelho
-        - [ ] Suporte improvisado para modelagem 3d
+        - [x] Sensor infravermelho para matriz de infravermelho
+        - [x] Suporte improvisado para modelagem 3d
+        - [ ] Diminuir a quantidade de cabos
     - [ ] Apresentar código de exemplo
     - [ ] Links para datasheet dos componentes
 -->
@@ -218,7 +218,7 @@ Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm 
 
 <!-- Imagem 22 / arduino sendo alimentado -->
 
->**Nota:** Uma pinça talvez ajude com os fios quando ficarem muito numerosos.
+>**Nota:** uma pinça talvez ajude com os fios quando ficarem muito numerosos.
 
 #### Controle de sensores
 
@@ -252,9 +252,19 @@ Clone o repositório e faça o upload desse [código](https://github.com/LuxLuca
 
 <!-- Imagem 24 / exemplo de pista -->
 
-**Atividade 2:** Me parece interessante seria a de desmontar e remontar o seguidor de linha em diferentes maneiras a fim de encontrar um modelo mais eficiente - ou simplesmente para ver o resultado.
+**Atividade 2:** Caso mais de um seguidor de linha tenha sido montado, seria possível, dentro de uma pista, fazer um "pega-pega" desses carrinhos. Nesse caso, dois carrinhos poderiam ser colocados em pontos contrários da pista, aquele que for mais rápido e tocar no outro primeiro, ganha.
+
+**Atividade 3:** Me parece interessante seria a de desmontar e remontar o seguidor de linha em diferentes maneiras a fim de encontrar um modelo mais eficiente - ou simplesmente para ver o resultado.
 
 ## Sugestões
+
+Durante a montagem do projeto percebi alguns pontos que poderiam ser melhorados em versões futuras, sendo esses tópicos:
+
+- **Trocar módulos IR:** Os sensores de infravermelho, mesmo calibrados, às vezes não respondiam corretamente quando estavam por cima da linha. Os sensores poderiam ser trocados por alguma matriz de sensor infravermelho, algo utilizado em seguidores de linha para competições.
+
+- **Suporte feito com desenho 3D:** Se a proposta da matriz de sensores infravermelho não ser uma opção aceita atualmente, recomendo pelo menos o desenho de um suporte para os sensores de infravermelho atuais. Isso ajudaria em dar mais área para a cola desses módulos e dificultaria um pouco mais as quedas por colisão.
+
+- **Diminuir os cabos:** A quantidade de cabos no projeto atual torna possível problemas de desconexão e manutenção. Recomendo utilizar placas e componentes que se comunicam por meio de internet ou bluetooth, diminuindo assim, a quantidade de cabos no projeto.
 
 ## Links de compras
 
