@@ -241,9 +241,11 @@ Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT
 
 ## Código de exemplo
 
-Para testar o carrinho montado seguindo os passos citados acima, providenciei um código para ser compilado pelo arduino. O programa está disponibilizado num repositório do GitHub, para acessá-lo clique [nesse link](https://github.com/LuxLucas/Seguidor-de-Linha).
+Para testar o carrinho montado seguindo os passos citados acima, providenciei um código para ser compilado pelo arduino. O programa está disponibilizado num repositório do GitHub, para acessá-lo clique [nesse link](https://github.com/LuxLucas/Seguidor-de-Linha). 
 
->**Nota:** clone o repositório e faça o upload desse [código](https://github.com/LuxLucas/Seguidor-de-Linha/blob/main/src/main.cpp) no arduino
+Clone o repositório e faça o upload desse [código](https://github.com/LuxLucas/Seguidor-de-Linha/blob/main/src/main.cpp) no arduino
+
+>**Nota:** o programa foi feito para seguir linha preta
 
 ## Proposta de atividade
 
@@ -332,4 +334,3 @@ Para testar o carrinho montado seguindo os passos citados acima, providenciei um
     Tubo de cola:
     - [tubo-cola](https://produto.mercadolivre.com.br/MLB-3956820107-kit-c-10-basto-de-cola-quente-grossa-11mm-10-unidades-30cm-_JM?searchVariation=182795493618#polycard_client=search-nordic&searchVariation=182795493618&position=38&search_layout=grid&type=item&tracking_id=b2118049-bdd7-4cf4-8f2a-5966d9e067a5)
 -->
-
