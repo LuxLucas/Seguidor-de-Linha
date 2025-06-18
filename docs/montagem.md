@@ -8,9 +8,10 @@
     - [ ] Propor atividade
     - [ ] Propor sugestão de melhoria
         - [ ] Roda boba para esfera suspensa
-        - [ ] Sensor infravermelho para matriz de improvisado
+        - [ ] Sensor infravermelho para matriz de infravermelho
         - [ ] Suporte improvisado para modelagem 3d
     - [ ] Apresentar código de exemplo
+    - [ ] Links para datasheet dos componentes
 -->
 
 <!-- Sites para converter em PDF
@@ -199,7 +200,9 @@ De forma geral, a utilização dos cabos jumpers ocorrerá da seguinte forma:
 
 #### Alimentação da ponte H
 
+Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-íon. Quando a ponte H for alimentada acenderá um LED nela contido.
 
+<!-- Imagem 20 / Ponte H sendo alimentada -->
 
 #### Controle de motores
 #### Alimentação do arduino
@@ -213,6 +216,8 @@ De forma geral, a utilização dos cabos jumpers ocorrerá da seguinte forma:
 ## Sugestões
 
 ## Links de compras
+
+## Datasheets de componentes
 
 <!-- Links de compra
      Kit Montagem: 
