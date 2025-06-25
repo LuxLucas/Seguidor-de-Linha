@@ -154,45 +154,21 @@ Aplique cola quente na parte inferior do suporte de baterias de Li-ion e o encai
 
 ### Protoboard
 
-<!-- [Explique sua gambiarra caso as barras condutoras estejam amostra] -->
-
-<!-- Imagem 9 / gambiarra na protoboard -->
-
 Use cola quente na parte inferior da protoboard e fixe-a próximo ao suporte de baterias.
 
-<!-- Imagem 10 / protoboard fixado -->
+<!-- Imagem 9 / protoboard fixado -->
 
 ### Interruptor
 
 Coloque o interruptor no centro do chassi. Perceba como os fios do suporte de baterias estão posicionados, os usaremos em seguida.
 
-<!-- Imagem 11 / interruptor visto de cima -->
+<!-- Imagem 10 / interruptor visto de cima -->
 
 Solde o fio positivo do suporte de baterias no interruptor. Em seguida, solde um dos jumpers macho-macho no outro pino do interruptor, como no exemplo a seguir:
 
-<!-- Imagem 12 / interruptor com fios soldados -->
+<!-- Imagem 11 / interruptor com fios soldados -->
 
 > **Nota:** Corte a ponta do jumper com alicate se for muito grande, os fios não podem ter contato.
-
-### Sensores infravermelho
-
-Antes de posicionar os sensores, verifique se estão calibrados. Para ajustar a sensibilidade à luz dos sensores rotacione seus potenciômetros.
-
-<!-- Imagem 13 / esquema de sensor conectado ao arduino -->
-
-<!-- Imagem 14 / sensor captando a linha -->
-
-<!-- Imagem 15 / sensor fora da linha -->
-
-Esses componentes serão colados na parte frontal do chassi obedecendo os seguintes critérios: 
-- A parte receptora do infravermelho deve estar em direção ao chassi;
-<!-- Imagem 16 / foto da orientaçãos do led receptor do sensor -->
-- A altura dos sensores em relação ao solo não deve ultrapassar 1cm, sendo aconselhável estarem à 5mm de altura para melhor precisão dos sensores;
-<!-- Imagem 17 / foto da altura dos sensores -->
-- A distância entre cada sensor não deve ser maior que o tamanho da linha a ser seguida, dessa forma pontos cegos entre os sensores são evitados;
-<!-- Imagem 18 / foto da distância entre os sensores -->
-
->**Nota:** Foi colado um suporte improvisado para melhor fixação dos sensores ao carrinho. 
 
 ### Cabeamento
 
@@ -221,6 +197,26 @@ Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm 
 <!-- Imagem 22 / arduino sendo alimentado -->
 
 >**Nota:** uma pinça talvez ajude com os fios quando ficarem muito numerosos.
+
+### Sensores infravermelho
+
+Antes de posicionar os sensores, verifique se estão calibrados. Para ajustar a sensibilidade à luz dos sensores rotacione seus potenciômetros.
+
+<!-- Imagem 13 / esquema de sensor conectado ao arduino -->
+
+<!-- Imagem 14 / sensor captando a linha -->
+
+<!-- Imagem 15 / sensor fora da linha -->
+
+Esses componentes serão colados na parte frontal do chassi obedecendo os seguintes critérios: 
+- A parte receptora do infravermelho deve estar em direção ao chassi;
+<!-- Imagem 16 / foto da orientaçãos do led receptor do sensor -->
+- A altura dos sensores em relação ao solo não deve ultrapassar 1cm, sendo aconselhável estarem à 5mm de altura para melhor precisão dos sensores;
+<!-- Imagem 17 / foto da altura dos sensores -->
+- A distância entre cada sensor não deve ser maior que o tamanho da linha a ser seguida, dessa forma pontos cegos entre os sensores são evitados;
+<!-- Imagem 18 / foto da distância entre os sensores -->
+
+>**Nota:** Foi colado um suporte improvisado para melhor fixação dos sensores ao carrinho. 
 
 #### Controle de sensores
 
