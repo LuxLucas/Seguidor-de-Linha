@@ -178,7 +178,7 @@ De forma geral, a utilização dos cabos jumpers ocorrerá da seguinte forma:
 
 #### Alimentação da ponte H
 
-Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-íon. Quando a ponte H for alimentada acenderá um LED nela contido.
+Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-íon. Quando as baterías forem inseridas no suporte, a ponte H será alimentada e acenderá um LED nela contido.
 
 <!-- Imagem 20 / Ponte H sendo alimentada -->
 
@@ -190,9 +190,20 @@ Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo O
 
 >**Nota:** os pinos EN devem ser plugados em entradas que suportem PWM do arduino.
 
+| Ponte H | Arduino |
+| --- | --- |
+| ENA | 6 |
+| IN1 | 7 |
+| IN2 | 8 |
+| IN3 | 9 |
+| IN4 | 10 |
+| ENB | 11 |
+
 #### Alimentação do arduino
 
-Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm de comprimento na porta de 5V e conecte num dos pontos da protoboard. Adicione também na porta GND deste módulo um outro cabo jumper macho-macho de 10 cm de comprimento e pine sua estremidade em outro ponto da protoboard. Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das portas 5V do arduino e sua estremidade na coluna da protoboard alimentada pela ponte H. Um outro cabo do mesmo tipo que o anterior deve ser pinado numa das portas GND do arduino e sua sua outra ponta encaixada na mesma coluna do cabo GND da ponte H. A figura abaixo ajuda a demonstrar o resultado:
+Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm de comprimento na porta de 5V e conecte num dos pontos da protoboard. Adicione também na porta GND deste módulo um outro cabo jumper macho-macho de 10 cm de comprimento e pine sua estremidade em outro ponto da protoboard. 
+
+Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das portas 5V do arduino e sua estremidade na coluna da protoboard alimentada pela ponte H. Um outro cabo do mesmo tipo que o anterior deve ser pinado numa das portas GND do arduino e sua sua outra ponta encaixada na mesma coluna do cabo GND da ponte H. A figura abaixo ajuda a demonstrar o resultado:
 
 <!-- Imagem 22 / arduino sendo alimentado -->
 
@@ -222,7 +233,7 @@ Esses componentes serão colados na parte frontal do chassi obedecendo os seguin
 
 Para ligar os sensores é preciso, com cabos jumper macho-fêmea de 10cm, ligar a entrada VCC e GND dos sensores na sua respectiva coluna da protoboard.
 
-<!-- Imagem 23 / sensor sendo alimentado -->
+<!-- Imagem 23 / sensores sendo alimentados -->
 
 > **Nota:** se desejar, pode utilizar fita para unir e organizar jumpers.
 
@@ -236,6 +247,14 @@ Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT
 | IN3 | 9 |
 | IN4 | 10 |
 | ENB | 11 |
+
+## Resultado final
+
+Após a conclusão dos passos anteriormente listados, o seguidor de linha ficará como no exemplo a seguir.
+
+<!-- Imagem x / Imagem do seguidor de linha completo -->
+
+> **Nota:** caso sejam encontrados problemas na montagem, não tenha receio de desmontar e corrigir a causa.
 
 ## Código de exemplo
 
