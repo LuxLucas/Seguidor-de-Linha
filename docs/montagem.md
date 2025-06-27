@@ -1,28 +1,3 @@
-<!-- Tópicos a desenvolver
-    - [x] Tamanho dos parafusos
-    - [x] Tamanho das chaves
-    - [x] Links para materiais
-    - [x] Criar anexo com links de compra
-    - [x] Explicar montagem
-    - [x] Link para GitHub
-    - [x] Propor atividade
-    - [x] Propor sugestão de melhoria
-        - [x] Sensor infravermelho para matriz de infravermelho
-        - [x] Suporte improvisado para modelagem 3d
-        - [x] Diminuir a quantidade de cabos
-    - [x] Apresentar código de exemplo
-    - [x] Links para datasheet dos componentes
-
-    - [ ] Verificar se os links estão certos
--->
-
-<!-- Sites para converter em PDF
-    - https://cloudconvert.com/md-to-pdf (achei a formatação legal)
-    - https://md-to-pdf.fly.dev/ (pode usar css)
-    - https://dillinger.io/
-
-    Mantenha as imagens na web
--->
 # Seguidor de linha com 2 rodas
 
 ## Componentes do seguidor de linha
@@ -129,7 +104,8 @@ Solde os fios estanhados nos motores como no exemplo abaixo. Utilize o fluxo de 
 
 ![motores-soldados.png](https://i.postimg.cc/pV6SJJTj/motores-soldados.png)
 
-> **Nota:** Deixe a esponja úmida para limpar o ferro de solda do acúmulo de estanho.
+> [!NOTE]
+> Deixe a esponja úmida para limpar o ferro de solda do acúmulo de estanho.
 
 Após posicionado os suportes entre o motor, ajuste os parafusos M3 de 30mm nas entradas e enrosque-os com as porcas M3. Certifique-se que o motor não esteja frouxo - pode utilizar o alicate para segurar as porcas enquanto parafusa. Repita o processo no segundo motor para ficar como na figura abaixo.
 
@@ -149,7 +125,8 @@ Utilizando cola quente, posicione o arduino na parte que será a traseira do cha
 
 Antes de fixar a ponte H, retire os pino das entradas ENA e ENB, elas são responsáveis pela velocidade dos motores. 
 
-> **Nota:** Se os pinos EN forem removidos, mas não cabeados, os motores não se moverão. 
+> [!NOTE]
+> Se os pinos EN forem removidos, mas não cabeados, os motores não se moverão. 
 
 **Figura 11:** Pinos EN da ponte H removidos
 
@@ -191,7 +168,8 @@ Solde o fio positivo do suporte de baterias no interruptor. Em seguida, solde um
 
 ![interruptor-soldado.png](https://i.postimg.cc/KYDV7Xkc/interruptor-soldado.png)
 
-> **Nota:** Corte a ponta do jumper com alicate se for muito grande, os fios não podem ter contato.
+> [!TIP]
+> Corte a ponta do jumper com alicate se for muito grande, os fios não podem ter contato.
 
 ### Cabeamento
 
@@ -217,7 +195,8 @@ Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo O
 
 ![motores-alimentados.png](https://i.postimg.cc/ZRfMgrx1/motores-alimentados.png)
 
->**Nota:** os pinos EN devem ser plugados em entradas que suportem PWM do arduino.
+> [!NOTE]
+> Os pinos EN devem ser plugados em entradas que suportem PWM do arduino.
 
 | Ponte H | Arduino |
 | --- | --- |
@@ -238,7 +217,8 @@ Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das por
 
 ![arduino-alimentado.png](https://i.postimg.cc/y8ZCZryW/arduino-alimentado.png)
 
->**Nota:** uma pinça talvez ajude com os fios quando ficarem muito numerosos.
+> [!TIP]
+> Uma pinça talvez ajude com os fios quando ficarem muito numerosos.
 
 ### Sensores infravermelho
 
@@ -263,7 +243,8 @@ Esses componentes serão colados na parte frontal do chassi obedecendo os seguin
 
 ![dire-o-ir.png](https://i.postimg.cc/0jQL2tNk/dire-o-ir.png)
 
->**Nota:** Foi colado um suporte improvisado para melhor fixação dos sensores ao carrinho. 
+> [!NOTE]
+> Foi colado um suporte improvisado para melhor fixação dos sensores ao carrinho. 
 
 - A altura dos sensores em relação ao solo não deve ultrapassar 1cm, sendo aconselhável estarem à 5mm de altura para melhor precisão dos sensores;
 
@@ -285,7 +266,8 @@ Para ligar os sensores é preciso, com cabos jumper macho-fêmea de 10cm, ligar 
 
 ![alimentacao-sensores.png](https://i.postimg.cc/L4xSKPs4/alimentacao-sensores.png)
 
-> **Nota:** se desejar, pode utilizar fita para unir e organizar jumpers.
+> [!NOTE]
+> Se desejar, pode utilizar fita para unir e organizar jumpers.
 
 Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT com o arduino nas seguintes portas:
 
@@ -306,7 +288,8 @@ Após a conclusão dos passos anteriormente listados, o seguidor de linha ficar�
 
 ![final.png](https://i.postimg.cc/Sx8HsYmM/final.png)
 
-> **Nota:** caso sejam encontrados problemas na montagem, não tenha receio de desmontar e corrigir a causa.
+> [!TIP]
+> Caso sejam encontrados problemas na montagem, não tenha receio de desmontar para encontrar a causa, um **multímetro** pode ser de ajuda.
 
 ## Código de exemplo
 
@@ -314,7 +297,8 @@ Para testar o carrinho montado seguindo os passos citados acima, providenciei um
 
 Clone o repositório e faça o upload desse [código](https://github.com/LuxLucas/Seguidor-de-Linha/blob/main/src/main.cpp) no arduino
 
->**Nota:** o programa foi feito para seguir linha preta
+> [!NOTE]
+> O programa foi feito para seguir linha preta
 
 ## Proposta de atividade
 **Atividade 1:** Com o seguidor de linha montado e com os comandos gravados no arduino é hora de testar. Crie uma pista com fita isolante preta e analise como o carrinho se comporta e faça correções, se necessário.
