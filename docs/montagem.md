@@ -2,16 +2,16 @@
     - [x] Tamanho dos parafusos
     - [x] Tamanho das chaves
     - [x] Links para materiais
-    - [ ] Criar anexo com links de compra
-    - [ ] Explicar montagem
+    - [x] Criar anexo com links de compra
+    - [x] Explicar montagem
     - [x] Link para GitHub
     - [x] Propor atividade
-    - [ ] Propor sugestão de melhoria
+    - [x] Propor sugestão de melhoria
         - [x] Sensor infravermelho para matriz de infravermelho
         - [x] Suporte improvisado para modelagem 3d
-        - [ ] Diminuir a quantidade de cabos
-    - [ ] Apresentar código de exemplo
-    - [ ] Links para datasheet dos componentes
+        - [x] Diminuir a quantidade de cabos
+    - [x] Apresentar código de exemplo
+    - [x] Links para datasheet dos componentes
 
     - [ ] Verificar se os links estão certos
 -->
@@ -54,19 +54,19 @@
 
 **Figura 1:** Componentes do seguidor de linha  
 
-[![componentes-335x250px.png](https://i.postimg.cc/c1h3nQgx/componentes-335x250px.png)](https://postimg.cc/NLyLh2kS)
+![componentes-335x250px.png](https://i.postimg.cc/c1h3nQgx/componentes-335x250px.png)
 
 A imagem acima mostra em seu canto superior, da esquerda para a direita, o suporte para baterias de Li-ion, baterias de Li-ion 18650, módulo de ponte h dupla 298N e uma das duas rodas de borracha. Em sua direita temos a roda boba, a segunda roda de borracha e os dois motores DC. Na parte inferior temos os cinco sensores de infravermelho. Já no canto esquerdo pode-se ver o chassi de acrílico e os suportes para os motores. Por fim, em seu centro, encontra-se o arduino, o cabo USB A/B, a protoboard de 50 pontos e o interruptor.
 
 **Figura 2:** Parafusos
 
-[![Adobe-Express-file-1.jpg](https://i.postimg.cc/pd3H7n5g/Adobe-Express-file-1.jpg)](https://postimg.cc/SXL3YRrr)
+![Adobe-Express-file-1.jpg](https://i.postimg.cc/pd3H7n5g/Adobe-Express-file-1.jpg)
 
 A figura 2 retrata os parafusos e relacionados que são utilizados no projeto. Os parafusos de maior comprimento são os parafusos M3 de 30mm, já os menores são os M3 de 8mm. Em adicional temos as porcas M3 e os espaçadores fêmea-fêmea M3 x 10mm.
 
 **Figura 3:** Cabos
 
-[![Adobe-Express-file-3.jpg](https://i.postimg.cc/T16X2M90/Adobe-Express-file-3.jpg)](https://postimg.cc/nj0WTWN9)
+![Adobe-Express-file-3.jpg](https://i.postimg.cc/T16X2M90/Adobe-Express-file-3.jpg)
 
 Na figura 3 temos, de cima para baixo, cabos jumper macho-macho de 20cm, cabos jumper macho-macho de 10cm, cabos jumper macho-fêmea de 10cm, cabos jumper macho-fêmea de 20cm e os fios estanhados de duas cabeças com 20cm de comprimento.
 
@@ -83,7 +83,7 @@ Na figura 3 temos, de cima para baixo, cabos jumper macho-macho de 20cm, cabos j
 
 **Figura 4:** Ferramentas de montagem
 
-[![Adobe-Express-file-2.jpg](https://i.postimg.cc/yxyCkQpH/Adobe-Express-file-2.jpg)](https://postimg.cc/y3xbGPzQ)
+![Adobe-Express-file-2.jpg](https://i.postimg.cc/yxyCkQpH/Adobe-Express-file-2.jpg)
 
 Com base na figura 4 percebe-se, da esquerda para a direita, a esponja vegetal, o suporte para o ferro de solda, o ferro de solda, a fonte da estação de solda, solda de estanho, chave de fenda com ponta M3 e a pistola de cola quente carregada.
 
@@ -103,7 +103,7 @@ Com base na figura 4 percebe-se, da esquerda para a direita, a esponja vegetal, 
 
 **Figura 5:** Ferramentas opcionais do projeto
 
-[![Adobe-Express-file-4.jpg](https://i.postimg.cc/767kyYgb/Adobe-Express-file-4.jpg)](https://postimg.cc/VrYTqwZc)
+![Adobe-Express-file-4.jpg](https://i.postimg.cc/767kyYgb/Adobe-Express-file-4.jpg)
 
 Segundo a figura 5, da esquerda para a direita, tem-se o multímetro digital, a tesoura, o alicate universal de 5 polegadas, o carregador de baterias de Li-ion 18650, o suporte para sensores infravermelhos (seja criativo), a fita isolante, a pinça antiestática curva, o fluxo de solda e o sugador de solda.
 
@@ -113,26 +113,37 @@ Segundo a figura 5, da esquerda para a direita, tem-se o multímetro digital, a 
 
 Posicione e parafuse as espaçadeiras M3 na parte que será a traseira do chassi. Em seguida, parafuse a roda boba nas espaçadeiras.
 
-<!-- Imagem 1 / espaçadeiras parafusadas -->
-<!-- Imagem 2 / roda boba parafusada -->
+**Figura 6:** Espaçadeiras parafusadas
+
+![espa-adeiras-parafusadas.png](https://i.postimg.cc/9FDv6NS1/espa-adeiras-parafusadas.png)
+
+**Figura 7:** Roda boba parafusada
+
+![roda-boba-parafusada.png](https://i.postimg.cc/DZzCqS35/roda-boba-parafusada.png)
 
 ### Motores
 
 Solde os fios estanhados nos motores como no exemplo abaixo. Utilize o fluxo de solda na região que será soldada para melhor aderência da solda.
 
-<!-- Imagem 3 / motores soldados -->
+**Figura 8:** Motores soldados
+
+![motores-soldados.png](https://i.postimg.cc/pV6SJJTj/motores-soldados.png)
 
 > **Nota:** Deixe a esponja úmida para limpar o ferro de solda do acúmulo de estanho.
 
 Após posicionado os suportes entre o motor, ajuste os parafusos M3 de 30mm nas entradas e enrosque-os com as porcas M3. Certifique-se que o motor não esteja frouxo - pode utilizar o alicate para segurar as porcas enquanto parafusa. Repita o processo no segundo motor para ficar como na figura abaixo.
 
-<!-- Imagem 4 / motores parafusados -->
+**Figura 9:** Motores parafusados
+
+![motores-parafusados.png](https://i.postimg.cc/d3pSQwX6/motores-parafusados.png)
 
 ### Arduino
 
 Utilizando cola quente, posicione o arduino na parte que será a traseira do chassi - acima da roda boba.
 
-<!-- Imagem 5 / arduino fixado -->
+**Figura 10:** Arduino fixado
+
+![arduino-colado.png](https://i.postimg.cc/TPvMqqt0/arduino-colado.png)
 
 ### Ponte H
 
@@ -140,33 +151,45 @@ Antes de fixar a ponte H, retire os pino das entradas ENA e ENB, elas são respo
 
 > **Nota:** Se os pinos EN forem removidos, mas não cabeados, os motores não se moverão. 
 
-<!-- Imagem 6 / pinos EN da ponte H removidos -->
+**Figura 11:** Pinos EN da ponte H removidos
+
+![ponte-h-sem-pino.png](https://i.postimg.cc/XYwD3MgK/ponte-h-sem-pino.png)
 
 Agora, novamente com a cola quente, posicione o módulo de ponte h próximo ao arduino. Nessa etapa não me preocupei com a centralização do componente para facilitar o uso do interruptor, como será percebido posteriormente.
 
-<!-- Imagem 7 / ponte h fixado -->
+**Figura 12:** Ponte H fixada
+
+![ponte-h-colada.png](https://i.postimg.cc/HLzZcQRV/ponte-h-colada.png)
 
 ### Suporte para baterias de Li-ion
 
 Aplique cola quente na parte inferior do suporte de baterias de Li-ion e o encaixe após o módulo de ponte h e os suportes dos motores.
 
-<!-- Imagem 8 / suporte de baterias fixado -->
+**Figura 13:** Suporte de baterias fixado
+
+![case-colado.png](https://i.postimg.cc/k5Nrj6Zm/case-colado.png)
 
 ### Protoboard
 
 Use cola quente na parte inferior da protoboard e fixe-a próximo ao suporte de baterias.
 
-<!-- Imagem 9 / protoboard fixado -->
+**Figura 14:** Protoboard fixada
+
+![protoboard-colada.png](https://i.postimg.cc/mrBpgddv/protoboard-colada.png)
 
 ### Interruptor
 
 Coloque o interruptor no centro do chassi. Perceba como os fios do suporte de baterias estão posicionados, os usaremos em seguida.
 
-<!-- Imagem 10 / interruptor visto de cima -->
+**Figura 15:** Interruptor visto de cima
+
+![interruptor-conectado.png](https://i.postimg.cc/CKgXfMK6/interruptor-conectado.png)
 
 Solde o fio positivo do suporte de baterias no interruptor. Em seguida, solde um dos jumpers macho-macho no outro pino do interruptor, como no exemplo a seguir:
 
-<!-- Imagem 11 / interruptor com fios soldados -->
+**Figura 16:** Interruptor com fios soldados
+
+![interruptor-soldado.png](https://i.postimg.cc/KYDV7Xkc/interruptor-soldado.png)
 
 > **Nota:** Corte a ponta do jumper com alicate se for muito grande, os fios não podem ter contato.
 
@@ -174,19 +197,25 @@ Solde o fio positivo do suporte de baterias no interruptor. Em seguida, solde um
 
 De forma geral, a utilização dos cabos jumpers ocorrerá da seguinte forma:
 
-<!-- Imagem 19 / Visão geral de cabeamento -->
+**Figura 17:** Visão geral de cabeamento
+
+![Seguidor-de-linha.png](https://i.postimg.cc/4dFWwXJG/Seguidor-de-linha.png)
 
 #### Alimentação da ponte H
 
 Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-íon. Quando as baterías forem inseridas no suporte, a ponte H será alimentada e acenderá um LED nela contido.
 
-<!-- Imagem 20 / Ponte H sendo alimentada -->
+**Figura 18:** Ponte H sendo alimentada
+
+![ponte-h-alimentada.png](https://i.postimg.cc/kgrhkMWX/ponte-h-alimentada.png)
 
 #### Controle de motores
 
 Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo OUT1 e OUT2 para um motor e OUT3 e OUT4 para outro. Com os cabos macho-fêmea conecte os pinos de EN e IN no arduino, como na figura abaixo:
 
-<!-- Imagem 21 / Diagrama de conexão dos motores -->
+**Figura 19:** Diagrama de conexão dos motores
+
+![motores-alimentados.png](https://i.postimg.cc/ZRfMgrx1/motores-alimentados.png)
 
 >**Nota:** os pinos EN devem ser plugados em entradas que suportem PWM do arduino.
 
@@ -205,7 +234,9 @@ Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm 
 
 Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das portas 5V do arduino e sua estremidade na coluna da protoboard alimentada pela ponte H. Um outro cabo do mesmo tipo que o anterior deve ser pinado numa das portas GND do arduino e sua sua outra ponta encaixada na mesma coluna do cabo GND da ponte H. A figura abaixo ajuda a demonstrar o resultado:
 
-<!-- Imagem 22 / arduino sendo alimentado -->
+**Figura 20:** Arduino sendo alimentado
+
+![arduino-alimentado.png](https://i.postimg.cc/y8ZCZryW/arduino-alimentado.png)
 
 >**Nota:** uma pinça talvez ajude com os fios quando ficarem muito numerosos.
 
@@ -213,27 +244,46 @@ Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das por
 
 Antes de posicionar os sensores, verifique se estão calibrados. Para ajustar a sensibilidade à luz dos sensores rotacione seus potenciômetros.
 
-<!-- Imagem 13 / esquema de sensor conectado ao arduino -->
+**Figura 21:** Esquema de sensor conectado ao arduino
 
-<!-- Imagem 14 / sensor captando a linha -->
+![alimentacao-sensor.png](https://i.postimg.cc/0jX1pT4K/alimentacao-sensor.png)
 
-<!-- Imagem 15 / sensor fora da linha -->
+**Figura 22:** Sensor captando a linha
+
+![ir-linha.png](https://i.postimg.cc/85kYtyMR/ir-linha.png)
+
+**Figura 23:** Sensor fora da linha
+
+![ir-sem-linha.png](https://i.postimg.cc/MHvF8vsX/ir-sem-linha.png)
 
 Esses componentes serão colados na parte frontal do chassi obedecendo os seguintes critérios: 
 - A parte receptora do infravermelho deve estar em direção ao chassi;
-<!-- Imagem 16 / foto da orientaçãos do led receptor do sensor -->
-- A altura dos sensores em relação ao solo não deve ultrapassar 1cm, sendo aconselhável estarem à 5mm de altura para melhor precisão dos sensores;
-<!-- Imagem 17 / foto da altura dos sensores -->
-- A distância entre cada sensor não deve ser maior que o tamanho da linha a ser seguida, dessa forma pontos cegos entre os sensores são evitados;
-<!-- Imagem 18 / foto da distância entre os sensores -->
+
+**Figura 24:** Orientaçãos do led receptor do sensor
+
+![dire-o-ir.png](https://i.postimg.cc/0jQL2tNk/dire-o-ir.png)
 
 >**Nota:** Foi colado um suporte improvisado para melhor fixação dos sensores ao carrinho. 
+
+- A altura dos sensores em relação ao solo não deve ultrapassar 1cm, sendo aconselhável estarem à 5mm de altura para melhor precisão dos sensores;
+
+**Figura 25:** Altura dos sensores
+
+![altura-ir.png](https://i.postimg.cc/J4gWtWJ9/altura-ir.png)
+
+- A distância entre cada sensor não deve ser maior que o tamanho da linha a ser seguida, dessa forma pontos cegos entre os sensores são evitados;
+
+**Figura 26:** Distância entre os sensores
+
+![distancia-ir.png](https://i.postimg.cc/VsGxHc7d/distancia-ir.png)
 
 #### Controle de sensores
 
 Para ligar os sensores é preciso, com cabos jumper macho-fêmea de 10cm, ligar a entrada VCC e GND dos sensores na sua respectiva coluna da protoboard.
 
-<!-- Imagem 23 / sensores sendo alimentados -->
+**Figura 27:** Sensores cabeados
+
+![alimentacao-sensores.png](https://i.postimg.cc/L4xSKPs4/alimentacao-sensores.png)
 
 > **Nota:** se desejar, pode utilizar fita para unir e organizar jumpers.
 
@@ -252,7 +302,9 @@ Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT
 
 Após a conclusão dos passos anteriormente listados, o seguidor de linha ficará como no exemplo a seguir.
 
-<!-- Imagem x / Imagem do seguidor de linha completo -->
+**Figura 28:** Seguidor de linha completo
+
+![final.png](https://i.postimg.cc/Sx8HsYmM/final.png)
 
 > **Nota:** caso sejam encontrados problemas na montagem, não tenha receio de desmontar e corrigir a causa.
 
@@ -267,7 +319,9 @@ Clone o repositório e faça o upload desse [código](https://github.com/LuxLuca
 ## Proposta de atividade
 **Atividade 1:** Com o seguidor de linha montado e com os comandos gravados no arduino é hora de testar. Crie uma pista com fita isolante preta e analise como o carrinho se comporta e faça correções, se necessário.
 
-<!-- Imagem 24 / exemplo de pista -->
+**Figura 29:** Exemplo de pista
+
+![pista.png](https://i.postimg.cc/SNYvTY2v/pista.png)
 
 **Atividade 2:** Caso mais de um seguidor de linha tenha sido montado, seria possível, dentro de uma pista, fazer um "pega-pega" desses carrinhos. Nesse caso, dois carrinhos poderiam ser colocados em pontos contrários da pista, aquele que for mais rápido e tocar no outro primeiro, ganha.
 
@@ -341,4 +395,4 @@ Os datasheets são documentos com informações técnicas de componentes, módul
 
 - [**Guia da ponte H**](https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/) e [**Circuito L298N**](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.st.com/resource/en/datasheet/l298.pdf&ved=2ahUKEwi99r7Kg_yNAxVYB7kGHe0NLJUQFnoECBoQAQ&usg=AOvVaw2N-avnGevlvQW2n7mZbsGQ)
 
-- [**Guia do sensor infravermelho**](https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-infravermelho-reflexivo-de-obstaculo)
+- [**Guia do sensor infravermelho**](https://www.blogdarobotica.com/2023/04/18/como-utilizar-o-sensor-de-obstaculo-reflexivo-infravermelho-ir-com-arduino/)
