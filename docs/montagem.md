@@ -4,7 +4,7 @@
 
 | Quantidade | Descrição |
 | --- | --- |
-| 1 | Aduino Uno |
+| 1 | Arduino Uno |
 | 2 | Bateria de Li-ion 18650 |
 | 1 | Cabo USB 2.0 A/B 30cm |
 | 3 | Cabo jumper macho-macho 10cm |
@@ -20,7 +20,7 @@
 | 4 | Parafuso M3 x 30mm (Fenda ou Philips) |
 | 8 | Parafuso M3 x 8mm (Fenda ou Philips) |
 | 1 | Ponte H Dupla L298N |
-| 4 | Porca sextavada M3 |
+| 4 | Porca hexagonal M3 |
 | 1 | Protoboard com 50 Pontos 8 x 1 x 1cm (CxLxA) |
 | 1 | Roda boba 38 x 32 x 38 x 29mm (CxLxAxD) |
 | 2 | Rodas de borracha 7 x 7 x 2,6 x 7cm (CxLxPxD) |
@@ -31,7 +31,7 @@
 
 ![componentes-335x250px.png](https://i.postimg.cc/c1h3nQgx/componentes-335x250px.png)
 
-A imagem acima mostra em seu canto superior, da esquerda para a direita, o suporte para baterias de Li-ion, baterias de Li-ion 18650, módulo de ponte h dupla 298N e uma das duas rodas de borracha. Em sua direita temos a roda boba, a segunda roda de borracha e os dois motores DC. Na parte inferior temos os cinco sensores de infravermelho. Já no canto esquerdo pode-se ver o chassi de acrílico e os suportes para os motores. Por fim, em seu centro, encontra-se o arduino, o cabo USB A/B, a protoboard de 50 pontos e o interruptor.
+A imagem acima mostra em seu canto superior, da esquerda para a direita, o suporte para baterias de Li-ion, baterias de Li-ion 18650, módulo de ponte H dupla 298N e uma das duas rodas de borracha. Em sua direita temos a roda boba, a segunda roda de borracha e os dois motores DC. Na parte inferior temos os cinco sensores de infravermelho. Já no canto esquerdo pode-se ver o chassi de acrílico e os suportes para os motores. Por fim, em seu centro, encontra-se o arduino, o cabo USB A/B, a protoboard de 50 pontos e o interruptor.
 
 **Figura 2:** Parafusos
 
@@ -86,9 +86,9 @@ Segundo a figura 5, da esquerda para a direita, tem-se o multímetro digital, a 
 
 ### Roda boba
 
-Posicione e parafuse as espaçadeiras M3 na parte que será a traseira do chassi. Em seguida, parafuse a roda boba nas espaçadeiras.
+Posicione e parafuse as espaçadores M3 na parte que será a traseira do chassi. Em seguida, parafuse a roda boba nas espaçadores.
 
-**Figura 6:** Espaçadeiras parafusadas
+**Figura 6:** Espaçadores parafusados
 
 ![espa-adeiras-parafusadas.png](https://i.postimg.cc/9FDv6NS1/espa-adeiras-parafusadas.png)
 
@@ -132,7 +132,7 @@ Antes de fixar a ponte H, retire os pino das entradas ENA e ENB, elas são respo
 
 ![ponte-h-sem-pino.png](https://i.postimg.cc/XYwD3MgK/ponte-h-sem-pino.png)
 
-Agora, novamente com a cola quente, posicione o módulo de ponte h próximo ao arduino. Nessa etapa não me preocupei com a centralização do componente para facilitar o uso do interruptor, como será percebido posteriormente.
+Agora, novamente com a cola quente, posicione o módulo de ponte H próximo ao arduino. Nessa etapa não me preocupei com a centralização do componente para facilitar o uso do interruptor, como será percebido posteriormente.
 
 **Figura 12:** Ponte H fixada
 
@@ -140,7 +140,7 @@ Agora, novamente com a cola quente, posicione o módulo de ponte h próximo ao a
 
 ### Suporte para baterias de Li-ion
 
-Aplique cola quente na parte inferior do suporte de baterias de Li-ion e o encaixe após o módulo de ponte h e os suportes dos motores.
+Aplique cola quente na parte inferior do suporte de baterias de Li-ion e o encaixe após o módulo de ponte H e os suportes dos motores.
 
 **Figura 13:** Suporte de baterias fixado
 
@@ -181,7 +181,7 @@ De forma geral, a utilização dos cabos jumpers ocorrerá da seguinte forma:
 
 #### Alimentação da ponte H
 
-Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-íon. Quando as baterías forem inseridas no suporte, a ponte H será alimentada e acenderá um LED nela contido.
+Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-íon. Quando as baterias forem inseridas no suporte, a ponte H será alimentada e acenderá um LED nela contido.
 
 **Figura 18:** Ponte H sendo alimentada
 
