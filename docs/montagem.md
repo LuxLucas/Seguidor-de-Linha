@@ -31,7 +31,7 @@
 
 ![componentes-335x250px.png](https://i.postimg.cc/c1h3nQgx/componentes-335x250px.png)
 
-A imagem acima mostra em seu canto superior, da esquerda para a direita, o suporte para baterias de Li-ion, baterias de Li-ion 18650, módulo de ponte H dupla 298N e uma das duas rodas de borracha. Em sua direita temos a roda boba, a segunda roda de borracha e os dois motores DC. Na parte inferior temos os cinco sensores de infravermelho. Já no canto esquerdo pode-se ver o chassi de acrílico e os suportes para os motores. Por fim, em seu centro, encontra-se o arduino, o cabo USB A/B, a protoboard de 50 pontos e o interruptor.
+A imagem acima mostra em seu canto superior, da esquerda para a direita, o suporte para baterias de Li-Ion, baterias de Li-Ion 18650, módulo de ponte H dupla 298N e uma das duas rodas de borracha. Em sua direita temos a roda boba, a segunda roda de borracha e os dois motores DC. Na parte inferior temos os cinco sensores de infravermelho. Já no canto esquerdo pode-se ver o chassi de acrílico e os suportes para os motores. Por fim, em seu centro, encontra-se o Arduino, o cabo USB A/B, a protoboard de 50 pontos e o interruptor.
 
 **Figura 2:** Parafusos
 
@@ -67,7 +67,7 @@ Com base na figura 4 percebe-se, da esquerda para a direita, a esponja vegetal, 
 | Quantidade | Descrição |
 | --- | --- |
 | 1 | Alicate universal 5 polegadas |
-| 1 | Carregador de baterias de Li-ion 18650 |
+| 1 | Carregador de baterias de Li-Ion 18650 |
 | 1 | Fita isolante (preta ou branca) 20mm x 10m (LxC)|
 | 1 | Fluxo de solda |
 | 1 | Multímetro digital |
@@ -80,13 +80,13 @@ Com base na figura 4 percebe-se, da esquerda para a direita, a esponja vegetal, 
 
 ![Adobe-Express-file-4.jpg](https://i.postimg.cc/767kyYgb/Adobe-Express-file-4.jpg)
 
-Segundo a figura 5, da esquerda para a direita, tem-se o multímetro digital, a tesoura, o alicate universal de 5 polegadas, o carregador de baterias de Li-ion 18650, o suporte para sensores infravermelhos (seja criativo), a fita isolante, a pinça antiestática curva, o fluxo de solda e o sugador de solda.
+Segundo a figura 5, da esquerda para a direita, tem-se o multímetro digital, a tesoura, o alicate universal de 5 polegadas, o carregador de baterias de Li-Ion 18650, o suporte para sensores infravermelhos (seja criativo), a fita isolante, a pinça antiestática curva, o fluxo de solda e o sugador de solda.
 
 ## Montagem
 
 ### Roda boba
 
-Posicione e parafuse as espaçadores M3 na parte que será a traseira do chassi. Em seguida, parafuse a roda boba nas espaçadores.
+Posicione e parafuse os espaçadores M3 na parte que será a traseira do chassi. Em seguida, parafuse a roda boba nos espaçadores.
 
 **Figura 6:** Espaçadores parafusados
 
@@ -115,7 +115,7 @@ Após posicionado os suportes entre o motor, ajuste os parafusos M3 de 30mm nas 
 
 ### Arduino
 
-Utilizando cola quente, posicione o arduino na parte que será a traseira do chassi - acima da roda boba.
+Utilizando cola quente, posicione o Arduino na parte que será a traseira do chassi - acima da roda boba.
 
 **Figura 10:** Arduino fixado
 
@@ -123,7 +123,7 @@ Utilizando cola quente, posicione o arduino na parte que será a traseira do cha
 
 ### Ponte H
 
-Antes de fixar a ponte H, retire os pino das entradas ENA e ENB, elas são responsáveis pela velocidade dos motores. 
+Antes de fixar a ponte H, retire os pinos das entradas ENA e ENB, elas são responsáveis pela velocidade dos motores. 
 
 > [!NOTE]
 > Se os pinos EN forem removidos, mas não cabeados, os motores não se moverão. 
@@ -132,15 +132,15 @@ Antes de fixar a ponte H, retire os pino das entradas ENA e ENB, elas são respo
 
 ![ponte-h-sem-pino.png](https://i.postimg.cc/XYwD3MgK/ponte-h-sem-pino.png)
 
-Agora, novamente com a cola quente, posicione o módulo de ponte H próximo ao arduino. Nessa etapa não me preocupei com a centralização do componente para facilitar o uso do interruptor, como será percebido posteriormente.
+Agora, novamente com a cola quente, posicione o módulo de ponte H próximo ao Arduino. Nessa etapa não me preocupei com a centralização do componente para facilitar o uso do interruptor, como será percebido posteriormente.
 
 **Figura 12:** Ponte H fixada
 
 ![ponte-h-colada.png](https://i.postimg.cc/HLzZcQRV/ponte-h-colada.png)
 
-### Suporte para baterias de Li-ion
+### Suporte para baterias de Li-Ion
 
-Aplique cola quente na parte inferior do suporte de baterias de Li-ion e o encaixe após o módulo de ponte H e os suportes dos motores.
+Aplique cola quente na parte inferior do suporte de baterias de Li-Ion e o encaixe após o módulo de ponte H e os suportes dos motores.
 
 **Figura 13:** Suporte de baterias fixado
 
@@ -181,7 +181,7 @@ De forma geral, a utilização dos cabos jumpers ocorrerá da seguinte forma:
 
 #### Alimentação da ponte H
 
-Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-íon. Quando as baterias forem inseridas no suporte, a ponte H será alimentada e acenderá um LED nela contido.
+Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interruptor na porta de 12V, que suporta de 6V a 35V. Já a porta GND do módulo receberá o cabo GND do suporte de baterias de Li-Ion. Quando as baterias forem inseridas no suporte, a ponte H será alimentada e acenderá um LED nela contido.
 
 **Figura 18:** Ponte H sendo alimentada
 
@@ -189,14 +189,14 @@ Para alimentar a ponte H conecte o cabo jumper macho-macho soldado ao interrupto
 
 #### Controle de motores
 
-Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo OUT1 e OUT2 para um motor e OUT3 e OUT4 para outro. Com os cabos macho-fêmea conecte os pinos de EN e IN no arduino, como na figura abaixo:
+Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo OUT1 e OUT2 para um motor e OUT3 e OUT4 para outro. Com os cabos macho-fêmea conecte os pinos de EN e IN no Arduino, como na figura abaixo:
 
 **Figura 19:** Diagrama de conexão dos motores
 
 ![motores-alimentados.png](https://i.postimg.cc/ZRfMgrx1/motores-alimentados.png)
 
 > [!NOTE]
-> Os pinos EN devem ser plugados em entradas que suportem PWM do arduino.
+> Os pinos EN devem ser plugados em entradas que suportem PWM do Arduino.
 
 | Ponte H | Arduino |
 | --- | --- |
@@ -207,11 +207,11 @@ Conecte os fios VCC e GND dos motores nas portas OUT1 a OUT4 da ponte H, sendo O
 | IN4 | 10 |
 | ENB | 11 |
 
-#### Alimentação do arduino
+#### Alimentação do Arduino
 
-Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm de comprimento na porta de 5V e conecte num dos pontos da protoboard. Adicione também na porta GND deste módulo um outro cabo jumper macho-macho de 10 cm de comprimento e pine sua estremidade em outro ponto da protoboard. 
+Ainda no módulo ponte H dupla L298N, prenda um cabo jumper macho-macho de 10cm de comprimento na porta de 5V e conecte num dos pontos da protoboard. Adicione também na porta GND deste módulo um outro cabo jumper macho-macho de 10 cm de comprimento e pine sua extremidade em outro ponto da protoboard. 
 
-Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das portas 5V do arduino e sua estremidade na coluna da protoboard alimentada pela ponte H. Um outro cabo do mesmo tipo que o anterior deve ser pinado numa das portas GND do arduino e sua sua outra ponta encaixada na mesma coluna do cabo GND da ponte H. A figura abaixo ajuda a demonstrar o resultado:
+Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das portas 5V do Arduino e sua extremidade na coluna da protoboard alimentada pela ponte H. Um outro cabo do mesmo tipo que o anterior deve ser pinado numa das portas GND do Arduino e sua outra ponta encaixada na mesma coluna do cabo GND da ponte H. A figura abaixo ajuda a demonstrar o resultado:
 
 **Figura 20:** Arduino sendo alimentado
 
@@ -224,13 +224,17 @@ Por fim, conecte um cabo jumper macho-macho de 20 cm de comprimento numa das por
 
 Antes de posicionar os sensores, verifique se estão calibrados. Para ajustar a sensibilidade à luz dos sensores rotacione seus potenciômetros.
 
-**Figura 21:** Esquema de sensor conectado ao arduino
+**Figura 21:** Esquema de sensor conectado ao Arduino
 
 ![alimentacao-sensor.png](https://i.postimg.cc/0jX1pT4K/alimentacao-sensor.png)
+
+Quando o receptor do infravermelho não detecta o sinal infravermelho ele mantém um de seus LEDs desligado.
 
 **Figura 22:** Sensor captando a linha
 
 ![ir-linha.png](https://i.postimg.cc/85kYtyMR/ir-linha.png)
+
+Contudo, quando o receptor detecta o sinal do emissor ambos os LEDs ligam em reposta.
 
 **Figura 23:** Sensor fora da linha
 
@@ -239,7 +243,7 @@ Antes de posicionar os sensores, verifique se estão calibrados. Para ajustar a 
 Esses componentes serão colados na parte frontal do chassi obedecendo os seguintes critérios: 
 - A parte receptora do infravermelho deve estar em direção ao chassi;
 
-**Figura 24:** Orientaçãos do led receptor do sensor
+**Figura 24:** Orientação do led receptor do sensor
 
 ![dire-o-ir.png](https://i.postimg.cc/0jQL2tNk/dire-o-ir.png)
 
@@ -252,7 +256,7 @@ Esses componentes serão colados na parte frontal do chassi obedecendo os seguin
 
 ![altura-ir.png](https://i.postimg.cc/J4gWtWJ9/altura-ir.png)
 
-- A distância entre cada sensor não deve ser maior que o tamanho da linha a ser seguida, dessa forma pontos cegos entre os sensores são evitados;
+- A distância entre cada sensor não deve ser maior que o tamanho da linha a ser seguida, dessa forma pontos cegos entre os sensores são evitados.
 
 **Figura 26:** Distância entre os sensores
 
@@ -266,19 +270,18 @@ Para ligar os sensores é preciso, com cabos jumper macho-fêmea de 10cm, ligar 
 
 ![alimentacao-sensores.png](https://i.postimg.cc/L4xSKPs4/alimentacao-sensores.png)
 
-> [!NOTE]
+> [!TIP]
 > Se desejar, pode utilizar fita para unir e organizar jumpers.
 
-Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT com o arduino nas seguintes portas:
+Com os cabos macho-fêmea de 20cm, interligue os sensores por meio da saída OUT com o Arduino nas seguintes portas:
 
-| Ponte H | Arduino |
+| Sentido do sensor | Porta do Arduino |
 | --- | --- |
-| ENA | 6 |
-| IN1 | 7 |
-| IN2 | 8 |
-| IN3 | 9 |
-| IN4 | 10 |
-| ENB | 11 |
+| Esquerda | 13 |
+| Centro-esquerda | 12 |
+| Centro | 5 |
+| Centro-direita | 4 |
+| Direita | 3 |
 
 ## Resultado final
 
@@ -293,7 +296,7 @@ Após a conclusão dos passos anteriormente listados, o seguidor de linha ficar�
 
 ## Código de exemplo
 
-Para testar o carrinho montado seguindo os passos citados acima, providenciei um código para ser compilado pelo arduino. O programa está disponibilizado num repositório do GitHub, para acessá-lo clique [nesse link](https://github.com/LuxLucas/Seguidor-de-Linha). 
+Para testar o carrinho montado seguindo os passos citados acima, providenciei um código para ser compilado pelo Arduino. O programa está disponibilizado num repositório do GitHub, para acessá-lo clique [nesse link](https://github.com/LuxLucas/Seguidor-de-Linha). 
 
 Clone o repositório e faça o upload desse [código](https://github.com/LuxLucas/Seguidor-de-Linha/blob/main/src/main.cpp) no arduino
 
@@ -301,7 +304,7 @@ Clone o repositório e faça o upload desse [código](https://github.com/LuxLuca
 > O programa foi feito para seguir linha preta
 
 ## Proposta de atividade
-**Atividade 1:** Com o seguidor de linha montado e com os comandos gravados no arduino é hora de testar. Crie uma pista com fita isolante preta e analise como o carrinho se comporta e faça correções, se necessário.
+**Atividade 1:** Com o seguidor de linha montado e com os comandos gravados no Arduino é hora de testar. Crie uma pista com fita isolante preta e analise como o carrinho se comporta e faça correções, se necessário.
 
 **Figura 29:** Exemplo de pista
 
@@ -319,7 +322,7 @@ Durante a montagem do projeto percebi alguns pontos que poderiam ser melhorados 
 
 - **Suporte feito com desenho 3D:** Se a proposta da matriz de sensores infravermelho não ser uma opção aceita atualmente, recomendo pelo menos o desenho de um suporte para os sensores de infravermelho atuais. Isso ajudaria em dar mais área para a cola desses módulos e dificultaria um pouco mais as quedas por colisão.
 
-- **Diminuir os cabos:** A quantidade de cabos no projeto atual torna possível problemas de desconexão e manutenção. Recomendo utilizar placas e componentes que se comunicam por meio de internet ou bluetooth, diminuindo assim, a quantidade de cabos no projeto.
+- **Diminuir os cabos:** A quantidade de cabos no projeto atual torna possível problemas de desconexão e manutenção. Recomendo utilizar placas e componentes que se comunicam por meio de internet ou Bluetooth, diminuindo assim, a quantidade de cabos no projeto.
 
 Você também pode contribuir com melhorias, sejam de montagem, código e demais outros tópicos. Consulte seu professor ou faça uma *issue* no repositório do GitHub.
 
@@ -327,13 +330,11 @@ Você também pode contribuir com melhorias, sejam de montagem, código e demais
 
 Caso seja necessário, a seguir uma lista de links para comprar os componentes do carrinho seguidor de linha montado no projeto:
 
-## Links de compras
-
 - [**Alicate universal 5 polegadas**](https://lista.mercadolivre.com.br/alicate-universal-5-polegadas)
 
-- [**Bateria Li-ion (18650)**](https://www.moduloeletronica.com.br/produto/bateria-li-ion-cr18650-37v-2200mah-green/5519308)
+- [**Bateria Li-Ion (18650)**](https://www.moduloeletronica.com.br/produto/bateria-li-ion-cr18650-37v-2200mah-green/5519308)
 
-- [**Carregador de baterias Li-ion**](https://produto.mercadolivre.com.br/MLB-2002348593-carregador-duplo-p-bateria-18650-42v-recarregavel-lanterna-_JM?matt_tool=48995110&matt_internal_campaign_id=&matt_word=&matt_source=google&matt_campaign_id=22603531562&matt_ad_group_id=185825366131&matt_match_type=&matt_network=g&matt_device=c&matt_creative=754595630379&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=402678149&matt_product_id=MLB2002348593&matt_product_partition_id=2423119992913&matt_target_id=pla-2423119992913&cq_src=google_ads&cq_cmp=22603531562&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22603531562&gclid=EAIaIQobChMIxKaEoqbvjQMV0JjuAR2m6i3jEAQYASABEgKcz_D_BwE)
+- [**Carregador de baterias Li-Ion**](https://produto.mercadolivre.com.br/MLB-2002348593-carregador-duplo-p-bateria-18650-42v-recarregavel-lanterna-_JM?matt_tool=48995110&matt_internal_campaign_id=&matt_word=&matt_source=google&matt_campaign_id=22603531562&matt_ad_group_id=185825366131&matt_match_type=&matt_network=g&matt_device=c&matt_creative=754595630379&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=402678149&matt_product_id=MLB2002348593&matt_product_partition_id=2423119992913&matt_target_id=pla-2423119992913&cq_src=google_ads&cq_cmp=22603531562&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22603531562&gclid=EAIaIQobChMIxKaEoqbvjQMV0JjuAR2m6i3jEAQYASABEgKcz_D_BwE)
 
 - [**Chave de fenda**](https://shopee.com.br/product/352141433/23693010144?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBM05iV2sxNDllZ2FIekN0a2lhY1o3OERDTzdERkNJQ1dVTkQ4MjdGS011dXpTVUdxeVVNd2NkbXk5UkE2bG1zNllNTE1kMWFWOTlvUmtxNWJOUVpLZnIzSFc2a25zdzA2TVZwWWZxdWVYMkNRPT0&gad_source=1&gad_campaignid=20828771740&gclid=EAIaIQobChMIu5OFtr7vjQMVJENIAB2o9ykpEAQYASABEgL3EvD_BwE)
 
@@ -355,15 +356,11 @@ Caso seja necessário, a seguir uma lista de links para comprar os componentes d
 
 - [**Kit de montagem**](https://www.saravati.com.br/kit-chassi-2wd-acrilico-robo-carrinho-2-rodas-zk-2.html)
 
-- [**Módulo IR**](https://www.eletrogate.com/sensor-de-obstaculo-reflexivo-infravermelho?srsltid=AfmBOop6VT2wNobI0qi0k3QrNCkiNV-L7YlhRM5vs0_ZPoeMQ5_jBwrD)
-
 - [**Módulo sensor infravermelho**](https://www.eletrogate.com/sensor-de-obstaculo-reflexivo-infravermelho?srsltid=AfmBOop6VT2wNobI0qi0k3QrNCkiNV-L7YlhRM5vs0_ZPoeMQ5_jBwrD)
 
 - [**Multímetro digital Hikari HM-2082**](https://www.infodatas.com.br/produto/multimetro-digital-hikari-hm-2082-2023-09-25-09-09-07?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&utm_source=google&utm_campaign=P.max_maximizar_o_valor_Convers%C3%A3o&utm_medium=Grupo_anuncios&utm_term=&gad_source=1&gad_campaignid=17335536414&gclid=EAIaIQobChMItoaHjK_vjQMVlF9IAB1sWhAEEAQYASABEgIOVvD_BwE)
 
 - [**Pistola de cola quente Vonder**](https://www.amazon.com.br/Pistola-Cola-Quente-0018-Vonder/dp/B09BDBGJDD/ref=asc_df_B09BDBGJDD?mcid=8b79ed37d5643f24b274e4d6982f9475&tag=googleshopp00-20&linkCode=df0&hvadid=709857067812&hvpos=&hvnetw=g&hvrand=17623548310011785414&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102289&hvtargid=pla-2420965852788&psc=1&language=pt_BR&gad_source=1)
-
-- [**Pistola de cola quente**](https://www.amazon.com.br/Pistola-Cola-Quente-0018-Vonder/dp/B09BDBGJDD/ref=asc_df_B09BDBGJDD?mcid=8b79ed37d5643c1b9ca1093f61d8482c&tag=googleshopp00-20&linkCode=df0&hvadid=709857067668&hvpos=&hvnetw=g&hvrand=8407564175091867188&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102289&hvtargid=pla-948557040459&psc=1&language=pt_BR&gad_source=1)
 
 - [**Tubo de cola quente**](https://produto.mercadolivre.com.br/MLB-3956820107-kit-c-10-basto-de-cola-quente-grossa-11mm-10-unidades-30cm-_JM?searchVariation=182795493618#polycard_client=search-nordic&searchVariation=182795493618&position=38&search_layout=grid&type=item&tracking_id=b2118049-bdd7-4cf4-8f2a-5966d9e067a5)
 
