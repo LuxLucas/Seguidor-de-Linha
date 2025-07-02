@@ -15,7 +15,7 @@ int somaRespostaSensores();
 */
 
 MotorCC motorEsquerdo(9,10,11);
-MotorCC motorDireito(7,8,6);
+MotorCC motorDireito(8,7,6);
 
 SensorInfravermelho sensorDireito(3);
 SensorInfravermelho sensorCentroDireito(4);
