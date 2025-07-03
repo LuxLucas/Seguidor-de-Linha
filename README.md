@@ -1,15 +1,5 @@
 # Seguidor de linha com 2 rodas
 
-<!--
-    - [ ] Introdução
-        - [ ] Motivo do projeto
-    - [ ] Desenvolvimento
-        - [ ] Ferramentas usadas
-        - [ ] Classes desenvolvidas
-    - [ ] Conclusão
-        - [ ] Links de montagem e código
--->
-
 ## Motivação
 
 O tema do trabalho foi inspirado nas competições de seguidores de linha em eventos como [IronCup](https://noic.com.br/olimpiadas/robotica/ironcup/) e [RoboChallenge Brasil](https://www.youtube.com/watch?v=3mpm20NsIOA). O objetivo foi desenvolver um pequeno carro seguidor de linha que se adequasse as regras dessas competições que, por sinal, utilizam [normas parecidas](https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/RoboCore_Seguidor_de_Linha_Regras_RSM.pdf). 
@@ -76,6 +66,6 @@ O carrinho em apresenta a seguinte forma final:
 
 Para ter acesso ao código executado pelo Arduino Uno acesse, compile e faça o upload do seguinte [arquivo](https://github.com/LuxLucas/Seguidor-de-Linha/blob/main/src/main.cpp).
 
-![Whats-App-Video-2025-05-29-at-19-33-24-1.gif](https://i.postimg.cc/q7dYsLT3/Whats-App-Video-2025-05-29-at-19-33-24-1.gif)
+![carrinho na pista](./docs/gif/carrinho%20na%20pista.gif)
 
 > Momento de teste dos carrinhos andando na pista
